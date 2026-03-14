@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left Content -->
+        <div class="content-section">
+            <!-- Header -->
+            <header class="header">
+                <h1>📚 Student Management</h1>
+                <p>Manage students efficiently</p>
+            </header>
+
+            <!-- Add Student Form -->
+            <div class="form-container">
+                <h2>Add New Student</h2>
+                <form id="studentForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Student Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="roll" placeholder="Roll Number" required>
+                        <select id="grade" required>
+                            <option value="">Select Grade</option>
+                            <option value="A">Grade A</option>
+                            <option value="B">Grade B</option>
+                            <option value="C">Grade C</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Student</button>
+                </form>
+            </div>
+
+            <!-- Students List -->
+            <div class="list-container">
+                <h2>All Students</h2>
+                <div id="studentsList" class="students-grid">
+                    <!-- Students will be added here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-card">
+                <div class="hexagon-image">
+                    <div class="hexagon-content">
+                        <span>👨‍🎓</span>
+                    </div>
+                </div>
+                <h3>Student Portal</h3>
+                <p>Manage all your students in one place</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalStudents">0</span>
+                        <span class="stat-label">Total Students</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
